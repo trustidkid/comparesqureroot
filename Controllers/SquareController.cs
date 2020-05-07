@@ -53,7 +53,6 @@ namespace CompareSquareRoot.Controllers
                     if(firstSquare < 0 || secondSquare < 0){
                         ViewBag.Result = "Negative value is not allowed here. Thank you";
                     }
-        
                 
                     //compare the square of the two values
                     else if(squareOne == squareTwo){ 
@@ -62,12 +61,12 @@ namespace CompareSquareRoot.Controllers
                     else if(squareOne > squareTwo){
                         ViewBag.Result = "The number "+ firstSquare + " with Square root of " + squareOne + 
                         " has a higher square root than the number " +
-                        secondSquare + " with square root of <b>"+ squareTwo;
+                        secondSquare + " with square root of "+ squareTwo;
                         
                     }else{
                         ViewBag.Result = "The number "+ secondSquare + " with Square root of " + squareTwo + 
                         " has a higher square root than the number " +
-                        firstSquare + " with square root of <b>"+ squareOne;
+                        firstSquare + " with square root of "+ squareOne;
                     }
                 }
                 
